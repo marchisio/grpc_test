@@ -1,0 +1,12 @@
+service Greeter {
+    rpc SayHello(HelloRequest) returns (HelloResponse){}
+}
+
+message HelloRequest {
+    string mess = 1;
+    int64 longitude = 1;
+}
+
+message HelloResponse {
+    uint32 status = 1;
+}
